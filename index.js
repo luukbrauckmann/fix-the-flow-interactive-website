@@ -26,9 +26,6 @@ const locationHandler = async () => {
 	let path = window.location.pathname
 	if (path.length == 0) path = '/'
 
-	const user = JSON.parse(localStorage.getItem('user'))
-	if (!user) path = '/aanmelden'
-
 	const route = getRoute(path)
 
 	const html = await fetch(`${route.componentRef}${route.alias}.html`)
