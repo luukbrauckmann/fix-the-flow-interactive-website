@@ -131,6 +131,13 @@ form {
 	gap: 1rem;
 }
 
+@media only screen and (min-width: 576px) {
+  form {
+		width: 320px;
+		margin-inline: auto;
+	}
+}
+
 form > fieldset {
 	border: none;
 	display: flex;

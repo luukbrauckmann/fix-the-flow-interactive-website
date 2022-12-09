@@ -2,6 +2,7 @@ document.addEventListener('click', (e) => {
 	const { target } = e
 	if (!target.matches('a')) return
 	e.preventDefault()
+	if (target.href === window.location.pathname) return
 	route()
 })
 
@@ -22,9 +23,14 @@ const route = (event) => {
 }
 
 const locationHandler = async () => {
-	const path = window.location.pathname
+	let path = window.location.pathname
 	if (path.length == 0) path = '/'
-	const route = routes.find((route) => route.path === path) || routes['404']
+
+	const user = JSON.parse(localStorage.getItem('user'))
+	if (!user) path = '/aanmelden'
+
+	const route = getRoute(path)
+
 	const html = await fetch(`${route.componentRef}${route.alias}.html`)
 		.then((response) => response.text())
 
@@ -38,6 +44,8 @@ const locationHandler = async () => {
 	const script = document.getElementById('component-scripts')
 	script.src = `${route.componentRef}${route.alias}.js`
 }
+
+getRoute = (path) => routes.find((route) => route.path === path) || routes.find((route) => route.path === '/404')
 
 window.onpopstate = locationHandler
 window.route = route
