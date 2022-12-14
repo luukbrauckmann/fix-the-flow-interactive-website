@@ -36,10 +36,10 @@ const locationHandler = async () => {
 	main.title = route.title
 
 	const link = document.getElementById('component-styles')
-	link.href = `${route.componentRef}${route.alias}.css`
+	link.href = `/${route.componentRef}${route.alias}.css`
 
 	const script = document.getElementById('component-scripts')
-	script.src = `${route.componentRef}${route.alias}.js`
+	script.src = `/${route.componentRef}${route.alias}.js`
 }
 
 getRoute = (path) => routes.find((route) => route.path === path) || routes.find((route) => route.path === '/404')
