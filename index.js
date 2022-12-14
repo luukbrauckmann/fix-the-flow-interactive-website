@@ -41,6 +41,7 @@ const locationHandler = async () => {
 	document.getElementById('component-styles').remove()
 	const link = document.createElement('link')
 	link.id = 'component-styles'
+	link.rel = 'stylesheet'
 	link.href = `${route.componentRef}${route.alias}.css`
 	document.head.appendChild(link)
 
