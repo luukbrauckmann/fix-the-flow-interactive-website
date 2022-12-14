@@ -14,6 +14,8 @@ const routes = [
 	{ path: '/account', title: 'Account', alias: 'account', componentRef: 'components/account/' }
 ]
 
+getRoute = (path) => routes.find((route) => route.path === path) || routes.find((route) => route.path === '/404')
+
 const route = (event) => {
 	event = event || window.event
 	event.preventDefault()
@@ -31,18 +33,23 @@ const locationHandler = async () => {
 	const html = await fetch(`${route.componentRef}${route.alias}.html`)
 		.then((response) => response.text())
 
+	document.title = route.title
+
 	const main = document.getElementById('main-content')
 	main.innerHTML = html
-	main.title = route.title
 
-	const link = document.getElementById('component-styles')
-	link.href = `/${route.componentRef}${route.alias}.css`
+	document.getElementById('component-styles').remove()
+	const link = document.createElement('link')
+	link.id = 'component-styles'
+	link.href = `${route.componentRef}${route.alias}.css`
+	document.head.appendChild(link)
 
-	const script = document.getElementById('component-scripts')
-	script.src = `/${route.componentRef}${route.alias}.js`
+	document.getElementById('component-scripts').remove()
+	const script = document.createElement('script')
+	script.id = 'component-scripts'
+	script.src = `${route.componentRef}${route.alias}.js`
+	document.body.appendChild(script)
 }
-
-getRoute = (path) => routes.find((route) => route.path === path) || routes.find((route) => route.path === '/404')
 
 window.onpopstate = locationHandler
 window.route = route
