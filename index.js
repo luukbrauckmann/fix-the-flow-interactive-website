@@ -1,7 +1,7 @@
-document.addEventListener('click', (e) => {
-	const { target } = e
+document.addEventListener('click', (event) => {
+	const { target } = event
 	if (!target.matches('a')) return
-	e.preventDefault()
+	event.preventDefault()
 	if (target.href === window.location.pathname) return
 	route()
 })
