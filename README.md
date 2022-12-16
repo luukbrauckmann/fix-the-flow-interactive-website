@@ -6,7 +6,7 @@
 3. [Bronnen](#bronnen)
 4. [Licentie](#licentie)
 
-## <a name="beschrijving">ℹ️ Beschrijving</a>
+## ℹ️ Beschrijving
 
 ## ✨ Kenmerken
 
