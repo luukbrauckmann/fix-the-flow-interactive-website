@@ -10,7 +10,7 @@
 ## ℹ️ Beschrijving
 >
 
-## ⭐ Kenmerken
+## ✨ Kenmerken
 
 ## 🌍 Bronnen
 
