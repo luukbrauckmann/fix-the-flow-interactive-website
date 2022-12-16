@@ -7,11 +7,11 @@
 - Bronnen
 - Licentie
 
-## 🗣️ Beschrijving
+## ℹ️ Beschrijving
 >
 
 ## ⭐ Kenmerken
 
-## ℹ️ Bronnen
+## 🏞️ Bronnen
 
 ## 🪪 Licentie
