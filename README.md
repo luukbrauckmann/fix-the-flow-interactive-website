@@ -8,13 +8,10 @@
 - Licentie
 
 ## ℹ️ Beschrijving
->
 
 ## ✨ Kenmerken
->
 
 ## 🌍 Bronnen
->
 
 ## 🪪 Licentie
 
