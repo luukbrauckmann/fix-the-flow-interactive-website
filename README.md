@@ -2,17 +2,20 @@
 
 ## 📦 Inhoud
 1. [Beschrijving](#beschrijving)
-2. [Kenmerken](#Kenmerken)
-3. [Bronnen](#Bronnen)
-4. [Licentie](#Licentie)
+2. [Kenmerken](#kenmerken)
+3. [Bronnen](#bronnen)
+4. [Licentie](#licentie)
 
 <a name="beschrijving"></a>
 ## ℹ️ Beschrijving
 
+<a name="kenmerken"></a>
 ## ✨ Kenmerken
 
+<a name="bronnen"></a>
 ## 🌍 Bronnen
 
+<a name="licentie"></a>
 ## 🪪 Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
