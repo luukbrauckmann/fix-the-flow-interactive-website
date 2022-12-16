@@ -1,5 +1,4 @@
-<img src="https://user-images.githubusercontent.com/47314813/208090848-d3f72be8-fb3a-44cd-8a37-602f1c0ba9fd.png" height="1em">
-
+# <img src="https://user-images.githubusercontent.com/47314813/208090848-d3f72be8-fb3a-44cd-8a37-602f1c0ba9fd.png" height="32px"> Coding The Curbs
 
 ## 📦 Inhoud
 
