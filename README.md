@@ -2,10 +2,10 @@
 
 ## 📦 Inhoud
 
-- Beschrijving
-- Kenmerken
-- Bronnen
-- Licentie
+1. [Beschrijving](#Beschrijving)
+2. [Kenmerken](#Kenmerken)
+3. [Bronnen](#Bronnen)
+4. [Licentie](#Licentie)
 
 ## ℹ️ Beschrijving
 
