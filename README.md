@@ -12,7 +12,7 @@
 
 ## ⭐ Kenmerken
 
-## 🏞️ Bronnen
+## 🌍 Bronnen
 
 ## 🪪 Licentie
 
