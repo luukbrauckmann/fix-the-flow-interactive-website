@@ -35,7 +35,7 @@ const locationHandler = async () => {
 
 	document.title = route.title
 
-	const main = document.getElementById('main-content')
+	const main = document.getElementsByTagName('main')[0]
 	main.innerHTML = html
 
 	const oldLink = document.getElementById('component-styles')
