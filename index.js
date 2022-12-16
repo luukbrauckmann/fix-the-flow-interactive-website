@@ -38,14 +38,16 @@ const locationHandler = async () => {
 	const main = document.getElementById('main-content')
 	main.innerHTML = html
 
-	document.getElementById('component-styles').remove()
+	const oldLink = document.getElementById('component-styles')
+	if (oldLink) oldLink.remove()
 	const link = document.createElement('link')
 	link.id = 'component-styles'
 	link.rel = 'stylesheet'
 	link.href = `${route.componentRef}${route.alias}.css`
 	document.head.appendChild(link)
 
-	document.getElementById('component-scripts').remove()
+	const oldScript = document.getElementById('component-scripts')
+	if (oldScript) oldScript.remove()
 	const script = document.createElement('script')
 	script.id = 'component-scripts'
 	script.src = `${route.componentRef}${route.alias}.js`
