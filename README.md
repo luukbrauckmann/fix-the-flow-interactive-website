@@ -18,8 +18,9 @@ De website is gebouwd met HTML, CSS & JavaScript.
 
 
 ## 🌍 Bronnen
-
-[Single Page App](https://dev.to/thedevdrawer/single-page-application-routing-using-hash-or-url-9jh)
+- [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview)
+- [Single Page App](https://dev.to/thedevdrawer/single-page-application-routing-using-hash-or-url-9jh)
 
 ## 🪪 Licentie
 
