@@ -1,2 +1,2 @@
-var registrationInputs = document.querySelectorAll('input')
-for(let input of registrationInputs) input.addEventListener('blur', () => input.dataset['touched'] = true)
+var inputs = document.querySelectorAll('input')
+for(let input of inputs) input.addEventListener('blur', () => input.dataset['touched'] = true)

@@ -54,6 +54,7 @@ const locationHandler = async () => {
 	const script = document.createElement('script')
 	script.id = 'component-scripts'
 	script.src = `${route.componentRef}${route.alias}.js`
+	script.async = true
 	document.body.appendChild(script)
 }
 

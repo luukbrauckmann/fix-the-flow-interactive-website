@@ -1,0 +1,14 @@
+#list ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#list ul > li {
+	background: var(--white);
+}
+
+#list ul > li > article {
+	padding: .5rem;
+}
