@@ -8,13 +8,16 @@ document.addEventListener('click', (event) => {
 
 const routes = [
 	{ path: '/404', title: '404', alias: '404', componentRef: 'components/404/' },
-	{ path: '/', title: 'Reserveren', alias: 'reservation', componentRef: 'components/reservation/' },
-	{ path: '/registreren', title: 'Registreren', alias: 'registration', componentRef: 'components/registration/' },
+	{ path: '/lijst', title: 'Lijst', alias: 'list', componentRef: 'components/list/' },
+	{ path: '/kaart', title: 'Kaart', alias: 'map', componentRef: 'components/map/' },
 	{ path: '/aanmelden', title: 'Aanmelden', alias: 'sign-in', componentRef: 'components/sign-in/' },
 	{ path: '/account', title: 'Account', alias: 'account', componentRef: 'components/account/' }
 ]
 
-getRoute = (path) => routes.find((route) => route.path === path) || routes.find((route) => route.path === '/404')
+getRoute = (path) => {
+	if (path === '/') return routes.find((route) => route.path === '/kaart')
+	return routes.find((route) => route.path === path) || routes.find((route) => route.path === '/404')
+}
 
 const route = (event) => {
 	event = event || window.event

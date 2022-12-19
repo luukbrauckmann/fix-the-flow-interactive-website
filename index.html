@@ -12,16 +12,38 @@
 
 </head>
 <body>
-	<header>
-		<a href="/" aria-label="Navigeer naar de start pagina">
-			<img src="./assets/CTC_Primary_Logo_White.png" height="31">
-		</a>
 
-		<a class="button primary" href="/aanmelden" aria-label="Navigeer naar de login pagina" >
-			<i aria-hidden="true" class="fa-light fa-user"></i>
-		</a>
-	</header>
-	<main></main>
+	<main>
+		<section>
+			<header>
+				<h1>Aan het laden</h1>
+			</header>
+			<div>...Content</div>
+		</section>
+	</main>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="/lijst">
+					<svg aria-hidden="true" class="fa-light fa-list"></svg>
+					<span>Lijst</span>
+				</a>
+			</li>
+			<li>
+				<a href="/kaart">
+					<svg aria-hidden="true" class="fa-light fa-map"></svg>
+					<span>Kaart</span>
+				</a>
+			</li>
+			<li>
+				<a href="/account">
+					<svg aria-hidden="true" class="fa-light fa-user"></svg>
+					<span>Account</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
 
 	<script src="index.js"></script>
 	<script async id="component-scripts"></script>
