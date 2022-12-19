@@ -57,9 +57,6 @@ section > footer {
 body > main,
 section > div {
 	flex: 1 1 auto;
-}
-
-body > main {
 	overflow: auto;
 }
 
