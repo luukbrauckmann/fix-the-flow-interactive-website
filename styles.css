@@ -80,6 +80,7 @@ body > header > a {
 section > header {
 	background: #FAFAFA;
 	padding: 1rem;
+	text-align: center;
 }
 
 section > div {
