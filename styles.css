@@ -194,9 +194,16 @@ input::placeholder {
 nav {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	background: var(--primary-color);
+	display: flex;
+	gap: 1rem;
+}
+
+nav > img {
+	display: none;
 }
 
 nav > ul {
+	flex-grow: 1;
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
@@ -216,4 +223,47 @@ nav > ul > li > a {
 	gap: .25rem;
 	padding: .5rem .75rem;
 	border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+	main {
+		margin-top: 75.6px;
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		padding: 1rem;
+	}
+
+	nav > img {
+		display: block;
+	}
+
+	nav > ul {
+		justify-content: start;
+	}
+
+	nav > ul > li {
+		flex: initial;
+	}
+
+	nav > ul > li:last-child {
+		margin-left: auto;
+	}
+
+	nav > ul > li > a {
+		flex-direction: row;
+		gap: .5rem;
+		transition: all .2s ease-in-out;
+	}
+
+	nav > ul > li > a:hover {
+		color: #09102e;
+	}
+
+	section > header {
+		text-align: left;
+	}
 }
