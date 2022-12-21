@@ -49,7 +49,7 @@ svg {
 
 html,
 body {
-	height: 100vh;
+	height: 100%;
 	font-family: var(--font-family);
 	font-size: 18px;
 }
