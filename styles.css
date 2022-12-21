@@ -208,6 +208,7 @@ fieldset > label {
 	padding: .5rem .75rem;
 	border: 2px solid transparent;
 	pointer-events: none;
+	color: #C7D2E0;
 }
 
 fieldset:has(input:not(:placeholder-shown)) > label {

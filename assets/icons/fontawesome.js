@@ -300,7 +300,7 @@
     'far': 'regular',
     'fa-regular': 'regular',
     'fal': 'light',
-    'fa-light': 'light',
+    'fa-regular': 'light',
     'fat': 'thin',
     'fa-thin': 'thin',
     'fad': 'duotone',
@@ -329,7 +329,7 @@
     'fab': 'fa-brands',
     'fad': 'fa-duotone',
     'fak': 'fa-kit',
-    'fal': 'fa-light',
+    'fal': 'fa-regular',
     'far': 'fa-regular',
     'fas': 'fa-solid',
     'fat': 'fa-thin'
@@ -340,7 +340,7 @@
     'fa-brands': 'fab',
     'fa-duotone': 'fad',
     'fa-kit': 'fak',
-    'fa-light': 'fal',
+    'fa-regular': 'fal',
     'fa-regular': 'far',
     'fa-solid': 'fas',
     'fa-thin': 'fat'
