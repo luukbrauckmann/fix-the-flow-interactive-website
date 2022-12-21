@@ -1,7 +1,7 @@
 #home ul {
 	list-style: none;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
 	gap: 1rem;
 }
 
@@ -27,18 +27,16 @@
 	display: flex;
 	align-items: center;
 	gap: .5rem;
+	color: var(--primary-color);
 }
 
 @media screen and (min-width: 576px) {
 	#home > div > ul {
-		flex-direction: row;
-	}
-	#home > div > ul > li {
-		width: 50%;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 @media screen and (min-width: 768px) {
-	#home > div > ul > li {
-		width: 33.3333%;
+	#home > div > ul {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }

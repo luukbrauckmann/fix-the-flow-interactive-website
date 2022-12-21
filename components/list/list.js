@@ -30,7 +30,7 @@ buildList = () => {
 		listItems = listItems + listItem
 	}
 
-	const list = document.getElementsByTagName('ul')[0]
+	const list = document.getElementById('list')
 	list.innerHTML = listItems
 }
 

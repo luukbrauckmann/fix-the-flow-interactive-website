@@ -45,7 +45,6 @@ img, picture, svg, video {
 
 svg {
 	height: 1em;
-	width: 1em;
 }
 
 html,
@@ -197,6 +196,7 @@ form > fieldset {
 	display: flex;
 	flex-direction: column;
 	gap: .5rem;
+	position: relative;
 }
 
 input {
@@ -210,9 +210,6 @@ input {
 input[data-touched=true]:invalid {
 	background: #FBA5A5;
 	border-color: #FF4040;
-}
-input[data-touched=true]:invalid::placeholder {
-	color: #FF4040;
 }
 
 input::placeholder {
