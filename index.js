@@ -6,6 +6,10 @@ document.addEventListener('click', (event) => {
 	route()
 })
 
+document.addEventListener('submit', (event) => {
+	event.preventDefault()
+})
+
 const routes = [
 	{ path: '/404', title: '404', alias: '404', componentRef: 'components/404/' },
 	{ path: '/', title: 'Thuis', alias: 'home', componentRef: 'components/home/' },
