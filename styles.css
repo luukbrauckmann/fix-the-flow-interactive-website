@@ -263,7 +263,7 @@ nav > ul > li > a[data-active=true] {
 	color: #09102e;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
 	body {
 		flex-direction: column;
 	}

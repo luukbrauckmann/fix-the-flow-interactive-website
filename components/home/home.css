@@ -28,3 +28,17 @@
 	align-items: center;
 	gap: .5rem;
 }
+
+@media screen and (min-width: 576px) {
+	#home > div > ul {
+		flex-direction: row;
+	}
+	#home > div > ul > li {
+		width: 50%;
+	}
+}
+@media screen and (min-width: 768px) {
+	#home > div > ul > li {
+		width: 33.3333%;
+	}
+}
