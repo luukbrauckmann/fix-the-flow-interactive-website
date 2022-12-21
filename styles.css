@@ -43,6 +43,11 @@ img, picture, svg, video {
 	max-width: 100%;
 }
 
+svg {
+	height: 1em;
+	width: 1em;
+}
+
 html,
 body {
 	height: 100%;
