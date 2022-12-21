@@ -2,21 +2,21 @@ document.addEventListener('click', (event) => {
 	const { target } = event
 	if (!target.matches('a')) return
 	event.preventDefault()
-	if (target.href === window.location.pathname) return
+	if (target.href.substring(target.href.lastIndexOf('/')) === window.location.pathname) return
 	route()
 })
 
 const routes = [
 	{ path: '/404', title: '404', alias: '404', componentRef: 'components/404/' },
-	{ path: '/lijst', title: 'Lijst', alias: 'list', componentRef: 'components/list/' },
-	{ path: '/kaart', title: 'Kaart', alias: 'map', componentRef: 'components/map/' },
+	{ path: '/', title: 'Thuis', alias: 'home', componentRef: 'components/home/' },
+	{ path: '/reserveren', title: 'Reserveren', alias: 'reservation', componentRef: 'components/reservation/' },
 	{ path: '/registreren', title: 'Registreren', alias: 'registration', componentRef: 'components/registration/' },
 	{ path: '/aanmelden', title: 'Aanmelden', alias: 'sign-in', componentRef: 'components/sign-in/' },
 	{ path: '/account', title: 'Account', alias: 'account', componentRef: 'components/account/' }
 ]
 
 getRoute = (path) => {
-	if (path === '/') return routes.find((route) => route.path === '/kaart')
+	if (path === '/') return routes.find((route) => route.path === '/')
 	return routes.find((route) => route.path === path) || routes.find((route) => route.path === '/404')
 }
 
@@ -57,6 +57,10 @@ const locationHandler = async () => {
 	script.src = `${route.componentRef}${route.alias}.js`
 	script.async = true
 	document.body.appendChild(script)
+
+	const nav = document.getElementsByTagName('nav')[0]
+	const links = nav.getElementsByTagName('a')
+	for (let link of links) link.dataset['active'] = link.href.substring(link.href.lastIndexOf('/')) === route.path
 }
 
 window.onpopstate = locationHandler

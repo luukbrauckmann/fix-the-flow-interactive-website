@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,34 +9,30 @@
 
 	<link rel="stylesheet" href="styles.css">
 
-	<script src="https://kit.fontawesome.com/9c9a3ea7e1.js" crossorigin="anonymous"></script>
+	<script defer src="assets/icons/light.js"></script>
+	<script defer src="assets/icons/fontawesome.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=weekly&language=nl&region=NL" defer></script>
 
 </head>
+
 <body>
-
-	<main>
-		<section>
-			<header>
-				<h1>Aan het laden</h1>
-			</header>
-			<div>...Content</div>
-		</section>
-	</main>
-
 	<nav>
-		<img src="https://static.wixstatic.com/media/21dd0d_050319353c314f00b14e0fc7970173d8~mv2.png/v1/fill/w_163,h_56,al_c,q_95,enc_auto/CTC_Logo_Wit.png" height="39.6px">
+		<a href="/">
+			<img
+				src="https://static.wixstatic.com/media/21dd0d_050319353c314f00b14e0fc7970173d8~mv2.png/v1/fill/w_163,h_56,al_c,q_95,enc_auto/CTC_Logo_Wit.png"
+				height="39.6px">
+		</a>
 		<ul>
 			<li>
-				<a href="/lijst">
-					<svg aria-hidden="true" class="fa-light fa-list"></svg>
-					<span>Lijst</span>
+				<a href="/">
+					<svg aria-hidden="true" class="fa-light fa-home"></svg>
+					<span>Thuis</span>
 				</a>
 			</li>
 			<li>
-				<a href="/kaart">
-					<svg aria-hidden="true" class="fa-light fa-map"></svg>
-					<span>Kaart</span>
+				<a href="/reserveren">
+					<svg aria-hidden="true" class="fa-light fa-location-pin"></svg>
+					<span>Reserveren</span>
 				</a>
 			</li>
 			<li>
@@ -47,7 +44,17 @@
 		</ul>
 	</nav>
 
+	<main>
+		<section>
+			<header>
+				<h1>Aan het laden</h1>
+			</header>
+			<div>...Content</div>
+		</section>
+	</main>
+
 	<script src="index.js"></script>
 	<script async id="component-scripts"></script>
 </body>
+
 </html>

@@ -50,11 +50,21 @@ body {
 	font-size: 18px;
 }
 
+
+
 body,
 section {
 	display: flex;
 	flex-flow: column;
 	height: 100%;
+}
+
+body {
+	flex-direction: column-reverse;
+}
+
+body > nav {
+	flex: 0 1 auto;
 }
 
 body > header,
@@ -207,9 +217,10 @@ nav {
 	background: var(--primary-color);
 	display: flex;
 	gap: 1rem;
+	z-index: 1;
 }
 
-nav > img {
+nav > a:has(> img) {
 	display: none;
 }
 
@@ -236,19 +247,31 @@ nav > ul > li > a {
 	border-radius: 5px;
 }
 
+nav > ul > li:nth-child(1) {
+	order: 2;
+}
+nav > ul > li:nth-child(2) {
+	order: 1;
+}
+nav > ul > li:nth-child(3) {
+	order: 3;
+}
+
+nav > ul > li > a[data-active=true] {
+	color: #09102e;
+}
+
 @media screen and (min-width: 768px) {
-	main {
-		margin-top: 75.6px;
+	body {
+		flex-direction: column;
 	}
 
 	nav {
-		position: fixed;
-		top: 0;
 		width: 100%;
 		padding: 1rem;
 	}
 
-	nav > img {
+	nav > a:has(> img) {
 		display: block;
 	}
 
@@ -258,6 +281,16 @@ nav > ul > li > a {
 
 	nav > ul > li {
 		flex: initial;
+	}
+
+	nav > ul > li:nth-child(1) {
+		order: 1;
+	}
+	nav > ul > li:nth-child(2) {
+		order: 2;
+	}
+	nav > ul > li:nth-child(3) {
+		order: 3;
 	}
 
 	nav > ul > li:last-child {
@@ -272,6 +305,10 @@ nav > ul > li > a {
 
 	nav > ul > li > a:hover {
 		color: #09102e;
+	}
+
+	nav > ul > li > a[href="/"] {
+		order: 1;
 	}
 
 	section > header {

@@ -1,0 +1,19 @@
+#reservation > header {
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
+
+.select-buttons {
+	list-style: none;
+	display: flex;
+}
+
+.select-buttons > li:first-child > button {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.select-buttons > li:last-child > button {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
