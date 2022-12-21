@@ -1,3 +1,7 @@
 #account > header {
 	text-align: center;
 }
+
+#account > footer > a {
+	width: 100%;
+}
