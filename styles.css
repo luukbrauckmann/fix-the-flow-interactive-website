@@ -199,6 +199,21 @@ form > fieldset {
 	position: relative;
 }
 
+input:not(:placeholder-shown) ~ label {
+	display: none;
+}
+
+fieldset > label {
+	position: absolute;
+	padding: .5rem .75rem;
+	border: 2px solid transparent;
+	pointer-events: none;
+}
+
+fieldset:has(input:not(:placeholder-shown)) > label {
+	opacity: 0;
+}
+
 input {
 	padding: .5rem .75rem;
 	border: 2px solid var(--white);
@@ -212,8 +227,8 @@ input[data-touched=true]:invalid {
 	border-color: #FF4040;
 }
 
-input::placeholder {
-	color: #D7CBCB;
+fieldset:has(input[data-touched=true]:invalid) > label {
+	color: #FF4040;
 }
 
 nav {
