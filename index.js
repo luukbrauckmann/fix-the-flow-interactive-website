@@ -10,6 +10,7 @@ const routes = [
 	{ path: '/404', title: '404', alias: '404', componentRef: 'components/404/' },
 	{ path: '/lijst', title: 'Lijst', alias: 'list', componentRef: 'components/list/' },
 	{ path: '/kaart', title: 'Kaart', alias: 'map', componentRef: 'components/map/' },
+	{ path: '/registreren', title: 'Registreren', alias: 'registration', componentRef: 'components/registration/' },
 	{ path: '/aanmelden', title: 'Aanmelden', alias: 'sign-in', componentRef: 'components/sign-in/' },
 	{ path: '/account', title: 'Account', alias: 'account', componentRef: 'components/account/' }
 ]
