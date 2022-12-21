@@ -4,6 +4,10 @@
 	justify-content: space-between;
 }
 
+#reservation > div {
+	padding: 0;
+}
+
 .select-buttons {
 	list-style: none;
 	display: flex;
@@ -16,4 +20,14 @@
 .select-buttons > li:last-child > button {
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
+}
+
+.select-buttons > li > button {
+	background: var(--white);
+	color: var(--primary-color);
+}
+
+.select-buttons > li > button[data-active="true"] {
+	background: var(--primary-color);
+	color: var(--white);
 }
