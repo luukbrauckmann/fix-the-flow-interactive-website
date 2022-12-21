@@ -1,7 +1,7 @@
 #reservation > header {
-	text-align: left;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	gap: .5rem;
 }
 
 #reservation > div {
@@ -13,6 +13,19 @@
 	display: flex;
 }
 
+.select-buttons > li {
+	flex: 1;
+}
+
+.select-buttons > li > button {
+	background: var(--white);
+	color: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	gap: .5rem;
+	width: 100%;
+}
+
 .select-buttons > li:first-child > button {
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
@@ -22,12 +35,15 @@
 	border-bottom-left-radius: 0px;
 }
 
-.select-buttons > li > button {
-	background: var(--white);
-	color: var(--primary-color);
-}
-
 .select-buttons > li > button[data-active="true"] {
 	background: var(--primary-color);
 	color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+	#reservation > header {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: end;
+	}
 }
