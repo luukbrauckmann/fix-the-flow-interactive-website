@@ -54,8 +54,6 @@ body {
 	font-size: 18px;
 }
 
-
-
 body,
 section {
 	display: flex;
@@ -72,6 +70,10 @@ body > nav {
 	font-family: var(--heading-font);
 }
 
+body > main {
+	overflow: auto;
+}
+
 body > header,
 body > footer
 section > header,
@@ -83,7 +85,6 @@ section > footer {
 body > main,
 section > div {
 	flex: 1 1 auto;
-	overflow: auto;
 }
 
 body > header {
