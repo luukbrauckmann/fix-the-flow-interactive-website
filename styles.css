@@ -104,7 +104,6 @@ body > header > a {
 section > header {
 	background: #FAFAFA;
 	padding: 1rem;
-	text-align: center;
 }
 
 section > div {
@@ -180,16 +179,11 @@ button[type=submit]:hover {
 }
 
 form {
+	width: 320px;
+	margin-inline: auto;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-}
-
-@media only screen and (min-width: 576px) {
-  form {
-		width: 320px;
-		margin-inline: auto;
-	}
 }
 
 form > fieldset {
@@ -198,22 +192,6 @@ form > fieldset {
 	flex-direction: column;
 	gap: .5rem;
 	position: relative;
-}
-
-input:not(:placeholder-shown) ~ label {
-	display: none;
-}
-
-fieldset > label {
-	position: absolute;
-	padding: .5rem .75rem;
-	border: 2px solid transparent;
-	pointer-events: none;
-	color: #C7D2E0;
-}
-
-fieldset:has(input:not(:placeholder-shown)) > label {
-	opacity: 0;
 }
 
 input {
@@ -330,9 +308,5 @@ nav > ul > li > a[data-active=true] {
 
 	nav > ul > li > a[href="/"] {
 		order: 1;
-	}
-
-	section > header {
-		text-align: left;
 	}
 }
