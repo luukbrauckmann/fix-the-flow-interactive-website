@@ -1,4 +1,4 @@
-# <img src="https://user-images.githubusercontent.com/47314813/208091687-3b01e8af-a2cd-43f0-8a6a-4e69ae3ca5f0.png" height="32px"> Coding The Curbs
+# <img src="https://user-images.githubusercontent.com/47314813/208091687-3b01e8af-a2cd-43f0-8a6a-4e69ae3ca5f0.png" height="26px"> Coding The Curbs
 
 Coding the Curbs heeft voor vervoerders van goederen een applicatie die de gebruikers de mogelijkheid geeft om door middel van een account Smart Zones te kunnen reserveren.
 
